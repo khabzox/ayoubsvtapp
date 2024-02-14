@@ -27,7 +27,7 @@ const Hero = () => {
                 </button>              
             </a>
             <a href="#" >
-                <button type="button" className="relative inline-flex justify-center items-center overflow-hidden group text-black hover:text-white  bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 shadow-lg shadow-purple-500/50 font-medium rounded-lg px-1 py-1 text-center me-2 mb-2">
+                <button type="button" className="relative inline-flex justify-center items-center overflow-hidden group text-purple-700 hover:text-white  bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 shadow-lg shadow-purple-500/50 font-medium rounded-lg px-1 py-1 text-center me-2 mb-2">
                 <span className="relative transition-all ease-in duration-75 px-6.5 py-1.5 bg-bodybg rounded-md group-hover:bg-opacity-0">
                 Purple to blue               
                 </span>
