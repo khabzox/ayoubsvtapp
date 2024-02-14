@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { ClerkProvider } from '@clerk/nextjs';
-import Header from '@/components/Header/page';
+import { frFR } from "@clerk/localizations";
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -17,10 +17,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
+    <html lang='fr'>
       <body className={`dark:bg-light ${inter.className}`}>
-        <ClerkProvider>
-          <Header />
+        <ClerkProvider localization={frFR}>
           {children}
         </ClerkProvider>
       </body>
