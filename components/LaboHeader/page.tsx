@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { UserButton } from "@clerk/clerk-react";
 // import DarkModeSwitcher from "./DarkModeSwitcher";
-import DropdownMessage from "./DropdownMessage";
-import DropdownNotification from "./DropdownNotification";
+// import DropdownMessage from "./DropdownMessage";
+// import DropdownNotification from "./DropdownNotification";
 // import DropdownUser from "./DropdownUser";
 import Image from "next/image";
 
@@ -110,11 +110,11 @@ const Header = (props: {
             {/* <!-- Dark Mode Toggler --> */}
 
             {/* <!-- Notification Menu Area --> */}
-            <DropdownNotification />
+            {/* <DropdownNotification /> */}
             {/* <!-- Notification Menu Area --> */}
 
             {/* <!-- Chat Notification Area --> */}
-            <DropdownMessage />
+            {/* <DropdownMessage /> */}
             {/* <!-- Chat Notification Area --> */}
           </ul>
           <UserButton userProfileUrl="/profile" />
