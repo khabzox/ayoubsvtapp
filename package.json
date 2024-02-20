@@ -1,5 +1,5 @@
 {
-  "name": "ayoubsvt",
+  "name": "ayoubsvtapp",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,14 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@clerk/localizations": "^1.26.15",
-    "@clerk/nextjs": "^4.29.7",
-    "flowbite": "^2.2.1",
-    "framer-motion": "^11.0.5",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "lucide-react": "^0.334.0",
     "next": "14.1.0",
-    "next-auth": "^4.24.5",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "tailwind-merge": "^2.2.1",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",
