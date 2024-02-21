@@ -1,9 +1,9 @@
-// import type { Config } from "tailwindcss"
-/** @type {import('tailwindcss').Config} */
+import type { Config } from "tailwindcss"
 
-module.exports = {
+const config = {
   darkMode: ["class"],
   content: [
+    './node_modules/flowbite/**/*.js',
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
@@ -11,13 +11,6 @@ module.exports = {
 	],
   prefix: "",
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
     fontFamily: {
       inter: ["Inter", "sans-serif"],
       'body': [
@@ -54,6 +47,13 @@ module.exports = {
         'Segoe UI Symbol', 
         'Noto Color Emoji'
       ],
+    },
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
     },
     extend: {
       colors: {
@@ -116,7 +116,6 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
-              
       fontSize: {
         metatitle: ["12px", "20px"],
         sectiontitle: ["14px", "22px"],
@@ -215,6 +214,13 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        line: {
+          "0%, 100%": { transform: "translateY(100%)" },
+          "50%": { transform: "translateY(0)" },
+        },
+        'gradient': {
+          to: { 'background-position': '200% center' },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -223,13 +229,6 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        line: {
-          "0%, 100%": { transform: "translateY(100%)" },
-          "50%": { transform: "translateY(0)" },
-        },
-        'gradient': {
-          to: { 'background-position': '200% center' },
-        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -238,11 +237,13 @@ module.exports = {
         line2: "line 6s linear infinite",
         line3: "line 9s linear infinite",
         'gradient': 'gradient 8s linear infinite',
-      
       },
     },
   },
   plugins: [
     require("tailwindcss-animate"),
-  ],
-} 
+    require('flowbite/plugin')
+],
+} satisfies Config
+
+export default config

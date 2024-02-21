@@ -1,7 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -58,7 +59,7 @@
     --accent-foreground: 210 40% 98%;
  
     --destructive: 0 62.8% 30.6%;
-    --destc:\Users\khabzo\Desktop\app-ayoubsvt\ayoubsvt\public\imagesructive-foreground: 210 40% 98%;
+    --destructive-foreground: 210 40% 98%;
  
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
