@@ -76,6 +76,7 @@ const config = {
         blacksection: "#1C2136",
         primaryy: "#9400FF",//done
         primaryho: "#ac39ff",//done for hover
+        labobg: "#9706ec",
         meta: "#27005D",//done
         waterloo: "#757693",
         manatee: "#999AA1",
@@ -242,7 +243,7 @@ const config = {
   },
   plugins: [
     require("tailwindcss-animate"),
-    require('flowbite/plugin')
+    require('flowbite/plugin'),
 ],
 } satisfies Config
 

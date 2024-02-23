@@ -1,4 +1,13 @@
 import { auth, currentUser } from '@clerk/nextjs';
+import WelDashboard from "@/components/WelDashboard/page";
+import { Metadata } from "next";
+import DefaultLayout from "@/components/Layouts/DefaultLayout";
+
+export const metadata: Metadata = {
+    title: "Virtual-ZX10 | Labo",
+    description: "This is Next.js Home for TailAdmin Dashboard Template",
+  };
+
 
 export default async function DashboardPage() {
   const { userId } = auth();
@@ -9,20 +18,10 @@ export default async function DashboardPage() {
   }
 
   return (
-    <div className='mt-10 text-start max-w-xl mx-auto bg-sky-500 p-5 rounded'>
-      <h1 className='text-4xl font-bold'>Welcome</h1>
-      <ul className='list-none mt-10'>
-        <li className='mb-2'>
-          <span className='font-semibold'>First Name:</span> {user.firstName}
-        </li>
-        <li className='mb-2'>
-          <span className='font-semibold'>Last Name:</span> {user.lastName}
-        </li>
-        <li className='mb-2'>
-          <span className='font-semibold'>Email:</span>{' '}
-          {user.emailAddresses[0].emailAddress}
-        </li>
-      </ul>
-    </div>
+        <>
+          <DefaultLayout>
+            <WelDashboard />
+          </DefaultLayout>
+        </>
   );
 }

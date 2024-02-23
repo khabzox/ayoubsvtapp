@@ -26,10 +26,10 @@ const Hero = () => {
                
             </button>              
         </a>
-        <a href="#" >
+        <a href="https://youtu.be/22TuvwA7DpA?si=zRpUqkxgGg4OLTDb" target="_blank">
             <button type="button" className="relative inline-flex justify-center items-center overflow-hidden group text-purple-700 hover:text-white  bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 shadow-lg shadow-purple-500/50 font-medium rounded-lg px-1 py-1 text-center me-2 mb-2">
             <span className="relative transition-all ease-in duration-75 px-4.5 py-1.5 bg-bodybg rounded-md group-hover:bg-opacity-0">
-            Purple to blue               
+              PROPOS NOS       
             </span>
             </button>              
         </a>

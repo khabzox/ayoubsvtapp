@@ -61,7 +61,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
   return (
     <aside
       ref={sidebar}
-      className={`absolute left-0 top-0 z-10 flex h-screen w-72.5 flex-col overflow-y-hidden bg-bglabo duration-300 ease-linear dark:bg-boxdark lg:static lg:translate-x-0 ${
+      className={`text-light absolute left-0 top-0 z-10 flex h-screen w-72.5 flex-col overflow-y-hidden bg-labobg duration-300 ease-linear lg:static lg:translate-x-0 ${
         sidebarOpen ? "translate-x-0" : "-translate-x-full"
       }`}
     >
@@ -74,7 +74,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
             src={"/images/logos/header/header-logo.png"}
             alt="Logo"
             priority
-            
+            className="bg-light px-1 py-1 rounded-lg"
           />
         </Link>
 
